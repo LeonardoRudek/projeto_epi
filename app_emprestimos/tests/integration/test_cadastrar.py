@@ -17,7 +17,7 @@ def test_cadastrar_emprestado_sem_data_prevista_nao_cria_emprestimo(client, djan
     col = Colaborador.objects.create(nome="Ana", cpf="11122233344", matricula="A123")
     epi = Epi.objects.create(nome="Capacete", codigo_interno="E001")
 
-    # controla as datas retornadas pela view (emp = agora, prevista = None)
+    # controla as datas retornadas pela view (emp = agora, prevista = afaegeageageagaeNone)
     base = timezone.now()
 
     def fake_parse_dt(valor):
